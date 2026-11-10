@@ -106,15 +106,18 @@ function FinalCelebration() {
     <div
       className="
         relative
-        h-screen
+        min-h-screen
+        min-h-[100svh]
         w-full
-        overflow-hidden
+        overflow-x-hidden
+        overflow-y-auto
 
         flex
         justify-center
         items-center
 
-        px-4
+        px-3
+        py-5
         sm:px-5
       "
     >
@@ -150,8 +153,8 @@ function FinalCelebration() {
 
           text-center
 
-          mt-5
-          sm:mt-8
+          my-auto
+          py-2
         "
       >
         {/* ====================================
@@ -190,11 +193,12 @@ function FinalCelebration() {
             shadow-2xl
             shadow-pink-200
 
-            p-4
+            p-3
+            min-[380px]:p-4
             sm:p-5
             md:p-6
 
-            mb-4
+            mb-3
           "
         >
           {/* Teddy Movement */}
@@ -214,7 +218,8 @@ function FinalCelebration() {
               src={teddy}
               alt="Birthday Teddy"
               className="
-                w-44
+                w-36
+                min-[380px]:w-44
                 sm:w-52
                 md:w-60
                 lg:w-64
@@ -304,7 +309,7 @@ function FinalCelebration() {
             delay: 1.2,
           }}
           className="
-            text-3xl
+            text-[clamp(1.65rem,7vw,3rem)]
             sm:text-4xl
             md:text-5xl
 
@@ -344,8 +349,8 @@ function FinalCelebration() {
 
             text-pink-600
 
-            tracking-wide
-            leading-relaxed
+            tracking-normal
+            leading-tight
 
             mb-4
 
