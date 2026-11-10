@@ -317,7 +317,7 @@ function FinalCelebration() {
             mb-2
           "
         >
-          LOTS OF LOVE FOR YOU ❤️
+          BEST WISHES, BUDDY! 💛
         </motion.h1> */}
         <motion.h1
           initial={{
@@ -352,7 +352,7 @@ function FinalCelebration() {
             text-center
           "
         >
-          LOTS OF LOVE FOR YOU ❤️
+          LOTS OF WISHES FOR MY FRIENDS ❤️
         </motion.h1>
         {/* ====================================
             HAPPY BIRTHDAY
@@ -384,7 +384,7 @@ function FinalCelebration() {
             mb-1
           "
         >
-          Happy Birthday Baby! 🎂❤️
+          Happy Friendship Day! 💕
         </motion.p>
 
         {/* ====================================
@@ -415,9 +415,7 @@ function FinalCelebration() {
             sm:leading-7
           "
         >
-          May your life always be filled
-          <br />
-          with love, happiness and beautiful memories.
+          Friends make life brighter and happier.
         </motion.p>
 
         {/* ====================================
@@ -451,7 +449,9 @@ function FinalCelebration() {
             sm:leading-7
           "
         >
-          I hope all your dreams come true. ❤️
+          Thanks for always being there through the ups and downs.
+          <br />
+          Stay Happy, Stay Blessed! 🦋
         </motion.p>
 
         {/* ====================================

@@ -183,7 +183,7 @@ function Candle({ nextStep }) {
               mb-5
             "
           >
-            Blow The Candle Baby ❤️
+            Blow The Candle Chhotu ❤️
           </motion.h1>
 
           {/* Wish Message */}
@@ -375,7 +375,7 @@ function Candle({ nextStep }) {
                 mt-5
               "
             >
-              Happy Birthday Baby 🎉
+              Happy Birthday Chhotu 🎉
             </motion.h2>
 
             {/* Wish Message */}

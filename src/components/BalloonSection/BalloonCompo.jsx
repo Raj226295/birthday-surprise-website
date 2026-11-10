@@ -155,7 +155,7 @@ function BalloonCompo({ nextStep }) {
         {/* Heading */}
 
         <AnimatePresence mode="wait">
-          {!allPopped ? (
+          {!allPopped && (
             <motion.h1
               key="pop-heading"
               initial={{
@@ -182,45 +182,6 @@ function BalloonCompo({ nextStep }) {
               "
             >
               Pop all 4 balloons 🎈
-            </motion.h1>
-          ) : (
-            <motion.h1
-              key="love-heading"
-              initial={{
-                opacity: 0,
-                y: -20,
-                scale: 0.8,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-                scale: [1, 1.06, 1],
-              }}
-              transition={{
-                opacity: {
-                  duration: 0.5,
-                },
-
-                y: {
-                  duration: 0.5,
-                },
-
-                scale: {
-                  duration: 1.8,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                },
-              }}
-              className="
-                text-5xl
-                sm:text-6xl
-                text-pink-600
-                font-romantic
-                drop-shadow-sm
-                mb-5
-              "
-            >
-              My Love ❤️
             </motion.h1>
           )}
         </AnimatePresence>

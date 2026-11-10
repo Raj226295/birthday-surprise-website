@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import giftClose from "../../assets/gift-close.webp";
 import giftOpen from "../../assets/gift-open.webp";
+import sillyFace from "../../assets/silly-face.png";
 
 function GiftBox({ nextStep }) {
   const [isOpened, setIsOpened] = useState(false);
@@ -71,15 +72,6 @@ function GiftBox({ nextStep }) {
         rotate:
           Math.random() * 80 - 40,
 
-        // Different heart styles
-        emoji: [
-          "❤️",
-          "💕",
-          "💗",
-          "💖",
-          "💓",
-          "❤️",
-        ][Math.floor(Math.random() * 6)],
       })
     );
   }, []);
@@ -696,8 +688,11 @@ function GiftBox({ nextStep }) {
             ================================== */}
 
             {hearts.map((heart) => (
-              <motion.span
+              <motion.img
                 key={heart.id}
+
+                src={sillyFace}
+                alt=""
 
                 initial={{
                   x: 0,
@@ -794,7 +789,8 @@ function GiftBox({ nextStep }) {
                   left: "50%",
                   top: "55%",
 
-                  fontSize: `${heart.size}px`,
+                  width: `${heart.size}px`,
+                  height: `${heart.size}px`,
 
                   zIndex: 30,
                 }}
@@ -802,10 +798,9 @@ function GiftBox({ nextStep }) {
                 className="
                   pointer-events-none
                   select-none
+                  object-contain
                 "
-              >
-                {heart.emoji}
-              </motion.span>
+              />
             ))}
           </motion.div>
         )}

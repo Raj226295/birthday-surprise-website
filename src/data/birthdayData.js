@@ -1,23 +1,23 @@
 const birthdayData = {
-  name:"Dreamgirl ✨",
+  name:"Chhotu ✨",
   moments: [
     {
       icon: "❤️",
       title: "The Beginning",
       message:
-        "I still smile when I think about how all of this started",
+        "Little did we know that a simple moment would turn into such a wonderful friendship.",
     },
     {
       icon: "😊",
       title: "Your Smile",
       message:
-        "Your smile has a beautiful way of making even my worst days feel better.",
+        "A true friend makes ordinary moments turn into unforgettable memories.",
     },
     {
       icon: "🌙",
       title: "Late Night Talks",
       message:
-        "Some conversations are so special that they stay in our hearts forever.",
+        "Every crazy moment with you becomes a memory worth remembering.",
     },
     {
       icon: "🌸",
@@ -29,7 +29,7 @@ const birthdayData = {
       icon: "🥰",
       title: "Thank You",
       message:
-        "Thank you for being part of my life. I'm truly grateful for every moment we've shared.",
+        "No matter where life takes us, you'll always be one of my favourite people.",
     },
   ]
 };

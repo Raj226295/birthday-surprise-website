@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import birthdayData from "../../data/birthdayData";
-import FloatingHearts from "../../components/Common/FloatingHearts";
+import birthdayBalloons from "../../assets/birthday-balloons.png";
+import Confetti from "../FinalSection/Confetti";
+import Butterflies from "../FinalSection/Butterflies";
 
 import {
   fade,
   fadeUp,
-  heartbeat,
   floatingTitle,
   buttonAnimation,
 
@@ -15,33 +16,35 @@ function Welcome({ nextStep }) {
   return (
     <div className="relative flex items-center justify-center min-h-screen overflow-hidden px-6">
 
-      {/* Floating Hearts */}
-      <motion.div
-        variants={fade}
-        initial="hidden"
-        animate="visible"
-        transition={{ delay: 0.5 }}
-      >
-        <FloatingHearts />
-      </motion.div>
+      {/* Celebration animation from the final page */}
+      <Confetti />
+      <Butterflies />
 
       {/* Main Content */}
       <motion.div
         variants={fade}
         initial="hidden"
         animate="visible"
-        className="relative z-10 text-center"
+        className="relative z-10 flex flex-col items-center text-center"
       >
 
-        {/* Heart */}
-        <motion.h1
-          variants={heartbeat}
-          initial="hidden"
-          animate="visible"
-          className="text-6xl mb-4 will-change-transform"
-        >
-          ❤️
-        </motion.h1>
+        {/* Animated balloons replace the heart */}
+        <motion.img
+          src={birthdayBalloons}
+          alt="Colorful birthday balloons"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{
+            opacity: 1,
+            y: [0, -8, 0],
+            rotate: [-2, 2, -2],
+          }}
+          transition={{
+            opacity: { duration: 0.5, delay: 0.5 },
+            y: { duration: 2.8, repeat: Infinity, ease: "easeInOut" },
+            rotate: { duration: 2.8, repeat: Infinity, ease: "easeInOut" },
+          }}
+          className="block w-20 h-32 sm:w-24 sm:h-36 object-contain mb-4 will-change-transform"
+        />
 
         {/* Happy Birthday */}
         <motion.h1

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import teddy from "../../assets/teddy.webp";
+import butterflyIcon from "../../assets/butterfly-icon.png";
 
 function LoveLetter() {
   return (
@@ -70,12 +71,21 @@ function LoveLetter() {
 
           text-pink-600
           text-center
+          inline-flex
+          items-center
+          justify-center
+          gap-1
 
           mb-3
           md:mb-4
         "
       >
-        A Message From My Heart ❤️
+        A Message For You
+        <img
+          src={butterflyIcon}
+          alt=""
+          className="w-7 sm:w-8 md:w-9 h-auto object-contain"
+        />
       </h1>
 
       {/* ======================================
@@ -112,36 +122,35 @@ function LoveLetter() {
         "
       >
         <p>
-          Dear Baby,
+          Dear Chhotu,
           <br />
           <br />
 
-          Happy Birthday to the most special person in my life.
+          Happy Birthday to an amazing friend!
           <br />
           <br />
 
-          Thank you for making my life more beautiful every single day.
+          Thank you for filling my life with laughter and beautiful memories.
           <br />
           <br />
 
-          You deserve all the happiness, love and success in this world.
+          You deserve all the happiness, success and love in this world.
           <br />
           <br />
 
-          I hope all your dreams come true and your beautiful smile always
-          stays the same.
+          I hope all your dreams come true and your smile always stays the same.
           <br />
           <br />
 
-          Thank you for being yourself.
+          Thank you for being such a wonderful friend.
           <br />
           <br />
 
-          Lots of Love,
+          Lots of Best Wishes,
           <br />
           <br />
 
-           ❤️
+          Your Friend ❤️
         </p>
       </div>
 

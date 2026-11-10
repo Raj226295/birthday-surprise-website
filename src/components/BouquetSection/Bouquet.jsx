@@ -247,9 +247,7 @@ function Bouquet({ nextStep }) {
             mb-3
           "
         >
-          Every flower reminds me
-          <br />
-          of your beautiful smile.
+          Every moment with you makes life a little brighter.
         </motion.p>
 
         {/* ================= HEART DIVIDER ================= */}

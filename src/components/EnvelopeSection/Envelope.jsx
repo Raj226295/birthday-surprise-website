@@ -13,6 +13,7 @@ import LoveLetter from "./LoveLetter";
 
 import closeEnvelope from "../../assets/close-envelop.webp";
 import openEnvelope from "../../assets/open-envelop.webp";
+import butterflyIcon from "../../assets/butterfly-icon.png";
 
 function Envelope({ nextStep }) {
   const [opening, setOpening] = useState(false);
@@ -217,13 +218,22 @@ function Envelope({ nextStep }) {
 
               font-romantic
               text-pink-600
+              inline-flex
+              items-center
+              justify-center
+              gap-2
 
               leading-tight
 
               mb-7
             "
           >
-            A Message From My Heart ❤️
+            A Message For You
+            <img
+              src={butterflyIcon}
+              alt=""
+              className="w-10 sm:w-12 h-auto object-contain"
+            />
           </motion.h1>
 
           {/* ====================================
